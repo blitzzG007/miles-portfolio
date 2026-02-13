@@ -13,26 +13,74 @@
 }
 
 body {
-    background: #222;
-    color: #fff;
+    background: #f3f3f3;
+    color: #000;
+}
+
+section {
+    min-height: 100vh;
 }
 
 a {
-    color: #fff;
+    color: #000;
 }
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 20px 0;
+    background-color: #fff;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .navbar li {
     display: inline-flex;
-    padding: 0 10px;
+    padding: 0 25px;
 }
 
 .navbar a {
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#home h1 {
+    font-size: 3.5rem;
+    font-weight: 450;
+    letter-spacing: 35px;
+}
+
+#about h1 {
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 450;
+    letter-spacing: 10px;
+    text-align: center;
+    padding-top: 90px;
+}
+
+#about, 
+#contact {
+    background-color: #fff;
+}
+
+#projects {
+    display: flex;
+    justify-content: center;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
