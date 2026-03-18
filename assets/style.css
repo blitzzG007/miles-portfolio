@@ -1,4 +1,6 @@
+@import url('import/variables.css');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
@@ -13,8 +15,9 @@
 }
 
 body {
-    background: #f3f3f3;
+    background: var(--backgrd-1);
     color: #000;
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 section {
@@ -34,7 +37,7 @@ header {
     justify-content: space-around;
     align-items: center;
     padding: 20px 0;
-    background-color: #fff;
+    background-color: var(--backgrd-2);
     font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -62,25 +65,64 @@ header {
     letter-spacing: 35px;
 }
 
-#about h1 {
+.main-header {
     font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 450;
     letter-spacing: 10px;
     text-align: center;
-    padding-top: 90px;
+    padding: 90px 0 50px 0;
 }
 
 #about, 
 #contact {
-    background-color: #fff;
+    background-color: var(--backgrd-2);
 }
 
 #projects {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 90px;
 }
 
 .projects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+}
+
+.vids {
+    margin: 20px 40px;
+    padding: 10px;
+    /* border: 1px solid rgba(204, 204, 204, 0.514); */
+    box-shadow: 0px 28px 50px rgba(2, 10, 24, 0.16)/* ,
+    0px -23px 45px rgba(255, 255, 255, 1) */;
+    border-radius: 20px;
+    transition: all 0.3s ease-in;
+}
+
+.vids:hover {
+    transform: scale(1.05);
+}
+
+.contact-forms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    color: #fff;
+    background: #000;
+    border-radius: 5px;
 }
